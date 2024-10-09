@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import url("../reset.css");
+@import url("./body.css");
+@import url("./table.css");
+@import url("./form.css");
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3.25rem;
+  padding: 1rem;
+}
