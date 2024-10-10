@@ -9,36 +9,38 @@
 <link rel="stylesheet" href="./assets/styles/components/listar.css">
 </head>
 <body>
- <h1>Listar Productos</h1>
- <table>
-  <tr>
-   <td>Id</td>
-   <td>Nombre</td>
-   <td>Cantidad</td>
-   <td>Precio</td>
-   <td>Fecha Creacion</td>
-   <td>Fecha Actualizacion</td>
-   <td>Accion</td>
-  </tr>
-  <c:forEach var="producto" items="${lista}">
-  <tr>
-    <td>
-     <a href="productos?opcion=meditar&id=<c:out value="${ producto.id}"></c:out>">
-      <c:out value="${ producto.id}"></c:out>
-     </a>
-    </td>
-    <td><c:out value="${ producto.nombre}"></c:out></td>
-    <td><c:out value="${ producto.cantidad}"></c:out></td>
-    <td><c:out value="${ producto.precio}"></c:out></td>
-    <td><c:out value="${ producto.fechaCrear}"></c:out></td>
-    <td><c:out value="${ producto.fechaActualizar}"></c:out></td>
-    <td>
-     <a href="productos?opcion=eliminar&id=<c:out value="${ producto.id}"></c:out>">
-      Eliminar 
-     </a>
-    </td>
-  </tr>
-  </c:forEach>
- </table>
+	<div>
+		<h1>Listar Productos</h1>
+		 <table>
+		  <tr>
+		   <td>Id</td>
+		   <td>Nombre</td>
+		   <td>Cantidad</td>
+		   <td>Precio</td>
+		   <td>Fecha Creacion</td>
+		   <td>Fecha Actualizacion</td>
+		   <td>Accion</td>
+		  </tr>
+		  <c:forEach var="producto" items="${lista}">
+		  <tr>
+		    <td>
+		     <a href="productos?opcion=meditar&id=<c:out value="${ producto.id}"></c:out>">
+		      <c:out value="${ producto.id}"></c:out>
+		     </a>
+		    </td>
+		    <td><c:out value="${ producto.nombre}"></c:out></td>
+		    <td><c:out value="${ producto.cantidad}"></c:out></td>
+		    <td><c:out value="${ producto.precio}"></c:out></td>
+		    <td><c:out value="${ producto.fechaCrear}"></c:out></td>
+		    <td><c:out value="${ producto.fechaActualizar}"></c:out></td>
+		    <td>
+		     <a href="productos?opcion=eliminar&id=<c:out value="${ producto.id}"></c:out>">
+		      Eliminar 
+		     </a>
+		    </td>
+		  </tr>
+		  </c:forEach>
+		 </table>
+	</div>
 </body>
 </html>

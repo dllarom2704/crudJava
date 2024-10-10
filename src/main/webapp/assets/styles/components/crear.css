@@ -11,3 +11,8 @@ h1 {
   font-size: 3.25rem;
   padding: 1rem;
 }
+
+table tr td {
+	background-color: transparent;
+	box-shadow: none;
+}
